@@ -1,9 +1,45 @@
 <html>
     <head>
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="index.css" charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
     <body>
-        <h1>index.html</h1>
+        <header>
+            <input class="color" type="color" id="color"> 
+            <select class="select" id="mode" name="mode">
+                <option value="monochrome">monochrome</option>
+                <option value="monochrome-dark">monochrome-dark</option>
+                <option value="monochrome-light">monochrome-light</option>
+                <option value="analogic">analogic</option>
+                <option value="complement">complement</option>
+                <option value="analogic-complement">analogic-complement</option>
+                <option value="triad">triad</option>
+                <option value="quad">quad</option>
+            </select>
+            <button class="btn" id="btn">Get color scheme</button>
+        </header>
+        <main id="colors">
+                <div class="colorSet">
+                    <div data-hex="#000000" class="color" style="background-color: #000000;"></div>
+                    <div data-hex="#000000" class="colorCode">#000000</div>
+                </div>
+                <div class="colorSet">
+                    <div data-hex="#1A1919" class="color" style="background-color: #1A1919;"></div>
+                    <div data-hex="#1A1919" class="colorCode">#1A1919</div>
+                </div>
+                <div class="colorSet">
+                    <div data-hex="#343232" class="color" style="background-color: #343232;"></div>
+                    <div data-hex="#343232" class="colorCode">#343232</div>
+                </div>
+                <div class="colorSet">
+                    <div data-hex="#4F4A4A" class="color" style="background-color: #4F4A4A;"></div>
+                    <div data-hex="#4F4A4A" class="colorCode">#4F4A4A</div>
+                </div>
+                <div class="colorSet">
+                    <div data-hex="#6A6262" class="color" style="background-color: #6A6262;"></div>
+                    <div data-hex="#6A6262" class="colorCode">#6A6262</div>
+                </div>
+        </main>
         <script src="index.js"></script>
     </body>
 </html>
