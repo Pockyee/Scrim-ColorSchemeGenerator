@@ -21,7 +21,6 @@ btn.addEventListener('click',()=>{
                     <div data-hex="${color.hex.value}" class="colorCode">${color.hex.value}</div>
                 </div>`
             }
-            console.log(html)
         })
         .then(()=>document.getElementById('colors').innerHTML = html)
 
